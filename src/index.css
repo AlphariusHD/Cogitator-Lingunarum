@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    background-color: var(--theme-bg, #08090c);
+    color: var(--theme-text, #d4d4d8);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+.font-gothic {
+  font-family: 'Cinzel', serif;
+}
+
+.font-gothic-deco {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif;
+}
+
+.font-reader {
+  font-family: 'Crimson Pro', Georgia, serif;
+}
+
+.font-cogitator {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Grimdark scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme-scroll-track, #0d0e12);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-scroll-thumb, #252830);
+  border-radius: 2px;
+  border: 1px solid var(--theme-scroll-border, #3d3428);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-scroll-thumb-hover, #4a3e2e);
+}
+
+/* =========================================================
+   THEME STYLES (Alpha Legion, Black Templars, Mechanicus, Imperial)
+   ========================================================= */
+
+/* Alpha Legion (Hydra Dominatus) Theme */
+.theme-alpha-legion,
+.theme-alpha-legion.bg-theme-main {
+  --theme-bg: #06090f;
+  --theme-panel: rgba(10, 15, 24, 0.75);
+  --theme-panel-light: rgba(16, 24, 38, 0.85);
+  --theme-accent: #00e5ff;
+  --theme-accent-hover: #33ecff;
+  --theme-accent-muted: rgba(0, 229, 255, 0.15);
+  --theme-border: rgba(0, 229, 255, 0.35);
+  --theme-border-strong: #00e5ff;
+  --theme-text: #e0f2fe;
+  --theme-text-muted: #94a3b8;
+  --theme-scroll-track: #06090f;
+  --theme-scroll-thumb: #0f2438;
+  --theme-scroll-border: rgba(0, 229, 255, 0.3);
+  --theme-scroll-thumb-hover: #00b4d8;
+  --theme-glow: 0 0 16px rgba(0, 229, 255, 0.4);
+  background-color: #06090f;
+  background-image: 
+    radial-gradient(rgba(0, 229, 255, 0.12) 1.2px, transparent 1.2px), 
+    radial-gradient(rgba(0, 168, 204, 0.06) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* Black Templars Theme */
+.theme-black-templars,
+.theme-black-templars.bg-theme-main {
+  --theme-bg: #050507;
+  --theme-panel: rgba(13, 14, 18, 0.75);
+  --theme-panel-light: rgba(21, 22, 28, 0.85);
+  --theme-accent: #f4f4f5;
+  --theme-accent-hover: #ffffff;
+  --theme-accent-muted: rgba(244, 244, 245, 0.15);
+  --theme-border: rgba(212, 212, 216, 0.4);
+  --theme-border-strong: #e4e4e7;
+  --theme-text: #f4f4f5;
+  --theme-text-muted: #a1a1aa;
+  --theme-scroll-track: #050507;
+  --theme-scroll-thumb: #27272a;
+  --theme-scroll-border: rgba(244, 244, 245, 0.3);
+  --theme-scroll-thumb-hover: #52525b;
+  --theme-glow: 0 0 16px rgba(220, 38, 38, 0.5);
+  background-color: #050507;
+  background-image: 
+    radial-gradient(rgba(244, 244, 245, 0.08) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+/* Adeptus Mechanicus Theme */
+.theme-mechanicus,
+.theme-mechanicus.bg-theme-main {
+  --theme-bg: #0b0606;
+  --theme-panel: rgba(20, 10, 10, 0.75);
+  --theme-panel-light: rgba(28, 14, 14, 0.85);
+  --theme-accent: #ef4444;
+  --theme-accent-hover: #f87171;
+  --theme-accent-muted: rgba(239, 68, 68, 0.18);
+  --theme-border: rgba(239, 68, 68, 0.4);
+  --theme-border-strong: #ef4444;
+  --theme-text: #fecaca;
+  --theme-text-muted: #a8a29e;
+  --theme-scroll-track: #0b0606;
+  --theme-scroll-thumb: #361010;
+  --theme-scroll-border: rgba(239, 68, 68, 0.3);
+  --theme-scroll-thumb-hover: #b91c1c;
+  --theme-glow: 0 0 18px rgba(239, 68, 68, 0.5);
+  background-color: #0b0606;
+  background-image: 
+    radial-gradient(rgba(239, 68, 68, 0.12) 1.2px, transparent 1.2px), 
+    radial-gradient(rgba(234, 88, 12, 0.06) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+/* Imperial Gothic Theme (Adeptus Terra) */
+.theme-imperial-gothic,
+.theme-imperial-gothic.bg-theme-main {
+  --theme-bg: #08090c;
+  --theme-panel: rgba(14, 16, 21, 0.75);
+  --theme-panel-light: rgba(21, 24, 33, 0.85);
+  --theme-accent: #f59e0b;
+  --theme-accent-hover: #fbbf24;
+  --theme-accent-muted: rgba(245, 158, 11, 0.15);
+  --theme-border: rgba(245, 158, 11, 0.35);
+  --theme-border-strong: #f59e0b;
+  --theme-text: #fef3c7;
+  --theme-text-muted: #a3a3a3;
+  --theme-scroll-track: #08090c;
+  --theme-scroll-thumb: #292015;
+  --theme-scroll-border: rgba(245, 158, 11, 0.25);
+  --theme-scroll-thumb-hover: #d97706;
+  --theme-glow: 0 0 16px rgba(245, 158, 11, 0.4);
+  background-color: #08090c;
+  background-image: 
+    radial-gradient(rgba(245, 158, 11, 0.09) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Theme accent helpers */
+.text-theme-accent {
+  color: var(--theme-accent);
+}
+
+.border-theme-accent {
+  border-color: var(--theme-border);
+}
+
+.bg-theme-accent-muted {
+  background-color: var(--theme-accent-muted);
+}
+
+.shadow-theme-glow {
+  box-shadow: var(--theme-glow);
+}
+
+/* Subtle CRT scanline effect for Cogitator screens */
+.scanline {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0, 0, 0, 0.22) 50%,
+    rgba(0, 0, 0, 0.22)
+  );
+  background-size: 100% 4px;
+}

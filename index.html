@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cogitator Linguarum - Warhammer 40K Tłumacz Książek</title>
+    <meta name="description" content="Profesjonalny tłumacz i leksykon książek Warhammer 40,000 na język polski z zachowaniem oficjalnej terminologii Black Library, podziałem na rozdziały i kontrolą spójności lore." />
+    <meta property="og:title" content="Cogitator Linguarum - Warhammer 40K Tłumacz Książek" />
+    <meta property="og:description" content="Profesjonalny tłumacz i leksykon książek Warhammer 40,000 na język polski z zachowaniem oficjalnej terminologii Black Library, podziałem na rozdziały i kontrolą spójności lore." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0a0c10" />
+    <meta name="application-name" content="Cogitator Linguarum" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cinzel+Decorative:wght@700&family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-neutral-950 text-neutral-200 antialiased selection:bg-amber-900/60 selection:text-amber-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

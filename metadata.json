@@ -1,0 +1,6 @@
+{
+  "name": "Cogitator Linguarum - Warhammer 40K Tłumacz Książek",
+  "description": "Profesjonalny tłumacz i leksykon książek Warhammer 40,000 na język polski z zachowaniem oficjalnej terminologii Black Library, podziałem na rozdziały i kontrolą spójności lore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
